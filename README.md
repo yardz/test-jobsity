@@ -14,7 +14,8 @@ This project was bootstrapped with , using the and template.
 
 # features
 
-- [ x ] Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
+[x] Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
+
 - [ x ] Display reminders on the calendar view in the correct time order.
 - [ x ] Allow the user to select color when creating a reminder and display it appropriately.
 - [ x ] Ability to edit reminders – including changing text, city, day, time and color.
