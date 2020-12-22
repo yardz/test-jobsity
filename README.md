@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project was bootstrapped with , using the and template.
 
-## Available Scripts
+# Stack
 
-In the project directory, you can run:
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Redux](https://redux.js.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [axios](https://github.com/axios/axios)
+- [bootstrap](https://getbootstrap.com/)
+- [dayjs](https://github.com/iamkun/dayjs)
+- [formik](https://github.com/formium/formik)
+- [swr](https://swr.vercel.app/)
+- [yup](https://github.com/jquense/yup)
 
-### `yarn start`
+# features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[ x ] Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
+[ x ] Display reminders on the calendar view in the correct time order.
+[ x ] Allow the user to select color when creating a reminder and display it appropriately.
+[ x ] Ability to edit reminders – including changing text, city, day, time and color.
+[ x ] Add a weather service call from a free API such as Open Weather Map, and get the weather forecast (ex. Rain) for the date of the calendar reminder based on the city. --- **Atention:** I did not do this feature because the free api plan does not support search over 16 days away. Instead, I show the weather of just the present moment---
+[ x ] Unit test the functionality: Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Bonus (Optional)
 
-### `yarn test`
+[ x ] Expand the calendar to support more than the current month.
+[ x ] Properly handle overflow when multiple reminders appear on the same date.
+[ x ] Functionality to delete one reminder
+[ x ] Functionality to delete ALL the reminders for a specific day
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# scripts
 
-### `yarn build`
+## `yarn start`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Runs the app in the development mode.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- I used swr because if there are several reminders for the same city, only one request is made.
+- I used inline css for some elements because the test focus was not CSS, so I didn't bother to do something better or more advanced (modules or styled component).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## `yarn test`
 
-### `yarn eject`
+Launches the test runner in the interactive watch mode.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I just created the test for adding reminders: `src/components/reminderModal/reminderModal.spec.tsx`
+I created an integration test, because in the trophy model it is more recommended for frontend tests, with the integration test it is possible to better test all the desired flow and not just a single component.
+I also only tested a few flows, but enough to show that I know how to represent the desired scenarios.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## `yarn build`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Builds the app for production to the `build` folder.
