@@ -14,20 +14,19 @@ This project was bootstrapped with , using the and template.
 
 # features
 
-[x] Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
-
+- [x] Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
 - [x] Display reminders on the calendar view in the correct time order.
-- [ x ] Allow the user to select color when creating a reminder and display it appropriately.
-- [ x ] Ability to edit reminders – including changing text, city, day, time and color.
-- [ x ] Add a weather service call from a free API such as Open Weather Map, and get the weather forecast (ex. Rain) for the date of the calendar reminder based on the city. --- **Atention:** I did not do this feature because the free api plan does not support search over 16 days away. Instead, I show the weather of just the present moment---
-- [ x ] Unit test the functionality: Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
+- [x] Allow the user to select color when creating a reminder and display it appropriately.
+- [x] Ability to edit reminders – including changing text, city, day, time and color.
+- [x] Add a weather service call from a free API such as Open Weather Map, and get the weather forecast (ex. Rain) for the date of the calendar reminder based on the city. --- **Atention:** I did not do this feature because the free api plan does not support search over 16 days away. Instead, I show the weather of just the present moment---
+- [x] Unit test the functionality: Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
 
 ## Bonus (Optional)
 
-- [ x ] Expand the calendar to support more than the current month.
-- [ x ] Properly handle overflow when multiple reminders appear on the same date.
-- [ x ] Functionality to delete one reminder
-- [ x ] Functionality to delete ALL the reminders for a specific day
+- [x] Expand the calendar to support more than the current month.
+- [x] Properly handle overflow when multiple reminders appear on the same date.
+- [x] Functionality to delete one reminder
+- [x] Functionality to delete ALL the reminders for a specific day
 
 # scripts
 
